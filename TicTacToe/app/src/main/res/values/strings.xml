@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="congrats">Congratulations!</string>
+
+    <string name="new_game">new_game</string>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <GridLayout
+        android:layout_marginTop="40dp"
+        android:id="@+id/light_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:useDefaultMargins="true"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:layout_margin="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <Button style="@style/LightButton"
+            android:layout_marginTop="40dp"
+            android:id="@+id/button1"/>
+        <Button style="@style/LightButton"
+            android:layout_marginTop="40dp"
+            android:id="@+id/button2"/>
+        <Button style="@style/LightButton"
+            android:layout_marginTop="40dp"
+            android:id="@+id/button3"/>
+        <Button style="@style/LightButton"
+            android:layout_marginTop="40dp"
+            android:id="@+id/button4"/>
+        <Button style="@style/LightButton"
+            android:layout_marginTop="40dp"
+            android:id="@+id/button5"/>
+        <Button style="@style/LightButton"
+            android:layout_marginTop="40dp"
+            android:id="@+id/button6"/>
+        <Button style="@style/LightButton"
+            android:layout_marginTop="40dp"
+            android:id="@+id/button7"/>
+        <Button style="@style/LightButton"
+            android:layout_marginTop="40dp"
+            android:id="@+id/button8"/>
+        <Button style="@style/LightButton"
+            android:layout_marginTop="40dp"
+            android:id="@+id/button9"/>
+
+    </GridLayout>
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_width="200dp"-->
+    <Button
+
+        android:id="@+id/new_game_button"
+        style="@style/GameOptionButton"
+        android:layout_marginTop="40dp"
+        android:text="@string/new_game"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/light_grid"  />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,7 @@
 package com.itec_4550.tictactoe;
 
 import android.os.Bundle;
+import android.view.Menu;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -18,6 +19,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     private GameLogic gameLogic;
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.appbar_menu,menu);
+        return true;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
